@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-color: rgba(14, 199, 199, 0.438);
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px 10px 10px 10px;
+    padding: 0px 0px 10px 0px ;
+}
+
+/* .container .top-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.container .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container .wrapper .top-container {
+    background-image: linear-gradient(to right, #00a1ff, #00ff8f);
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    /* border-radius: 0 0 3rem 3rem; */
+}
+
+.container .wrapper .top-container h1 {
+    font-size: 2em;
+    margin: 2rem;
+    text-align: center;
+}
+
+.container .wrapper .top-container p {
+    font-size: 1em;
+    margin: 2rem;
+}
+
+.container .wrapper .bottom-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+}
+
+.container .wrapper .bottom-container .canvas-div {
+    margin: 40px;
+}
+
+.container .wrapper .bottom-container canvas {
+    background: linear-gradient(to right,rgb(249, 85, 235),rgb(240, 20, 20));
+    width: 90%;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    /* margin: auto; */
+    margin-top: 2rem;
+}
+
+.container .wrapper .bottom-container .select-gradient-bar {
+    margin: 20px;
+}
+
+.container .wrapper .bottom-container select {
+    width: 30%;
+    padding: 10px;
+    border: 2px solid #000;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.container .wrapper .bottom-container .select-gradient-bar .generateBtn {
+    padding: 10px;
+    border: 2px solid #000;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 10px;
+}
+
+
+
+.container .wrapper .bottom-container .select-gradient-bar .generateBtn:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+
+.container .wrapper .bottom-container .copy-gradient {
+    margin: 20px;
+}
+
+.container .wrapper .bottom-container .copy-gradient .gradientText {
+    width: 30%;
+    padding: 10px;
+    border: 2px solid #000;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.container .wrapper .bottom-container .copy-gradient .copyBtn {
+    padding: 10px;
+    border: 2px solid #000;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.container .wrapper .bottom-container .copy-gradient .copyBtn:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}

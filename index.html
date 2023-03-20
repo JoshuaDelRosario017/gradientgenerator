@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container ">
+        <div class="wrapper">
+            
+            <div class="top-container">
+                <h1 class="title col-md-12">CSS Automatic Gradient Generator</h1>
+                <p class="description col-md-12">This app generates random Linear, Radial and Conic gradient which you can use on your own design.</p>
+            </div>
+            <div class="bottom-container">
+                <div class="canvas-div">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="select-gradient-bar">
+                    <select name="gradient" id="gradient">
+                        <option value="" disabled selected>Select your gradient type</option>
+                        <option value="linear__gradient">Linear Gradient</option>
+                        <option value="radial__gradient">Radial Gradient</option>
+                        <option value="conic__gradient">Conic Gradient</option>
+                    </select>
+                    <button class="generateBtn" onclick="createGradient()">Generate</button>
+                </div>
+                <div class="copy-gradient">
+                    <input type="text" readonly value="linear-gradient(to right,rgb(249, 85, 235),rgb(240, 20, 20))" id="gradientText" class="gradientText" placeholder="gradient"> 
+                    <button class="copyBtn" onclick="copyGradientText()">Copy Gradient</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
