@@ -15,7 +15,7 @@ body,html {
     background-color: rgba(14, 199, 199, 0.438);
     height: auto;
     margin: 0px 0px 0px 0px;
-    border-radius: 0px 10px 10px 10px;
+    /* border-radius: 0px 10px 0px 10px; */
     padding: 0px 0px 10px 0px ;
 }
 
@@ -129,4 +129,44 @@ body,html {
     color: #fff;
     cursor: pointer;
     transition: 0.3s ease;
+}
+
+
+footer {
+    padding: 20px;
+    background-color: transparent;
+}
+
+@media(max-width:767px) {
+    .bottom-container .select-gradient-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-container .select-gradient-bar #gradient {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bottom-container .select-gradient-bar .generateBtn {
+        width: 50%;
+    }
+
+    .bottom-container .copy-gradient {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-container .copy-gradient #gradientText {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bottom-container .copy-gradient .copyBtn {
+        width: 50%;
+    }
 }
